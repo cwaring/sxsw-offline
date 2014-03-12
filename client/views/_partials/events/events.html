@@ -1,0 +1,21 @@
+<template name="events">
+	<section class="events row">
+		{{#each events}}
+		{{>event}}
+		{{/each}}
+	</section>
+</template>
+
+<template name="event">
+<div class="event col-sm-3">
+	<h4>
+		{{title}}
+	</h4>
+	<p>
+		<span class="glyphicon glyphicon-user"></span> {{name}}
+	</p>
+	<p>
+		<span class="glyphicon glyphicon-time"></span> {{date}}
+	</p>
+</event>
+</template>
